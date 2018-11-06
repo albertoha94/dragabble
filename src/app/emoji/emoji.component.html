@@ -1,0 +1,8 @@
+<ul sortable *ngIf="doc" [data]="doc.favs" (stop)="update($event)">
+
+  <li *ngFor="let emoji of doc.favs">
+    {{emoji}}
+  </li>
+
+</ul>
+<hr>
